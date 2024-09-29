@@ -44,7 +44,7 @@ struct Home: View {
 
                 Button(action: {
                     withAnimation(.easeInOut(duration: 1)) {
-
+                        currentShowingView = "SignIn"
                     }
                 }) {
                     Text("Sign In")
