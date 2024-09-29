@@ -41,7 +41,7 @@ struct CreateAccount: View {
                         width: scaleValue(for: 350, screenDimension: size,screenRefrence : screenWidth),
                         height: scaleValue(for: 50, screenDimension: size,screenRefrence : screenWidth)
                     )
-                    .padding(.top,scaleValue(for: 40, screenDimension: size,screenRefrence : screenHeight))
+                    .padding(.top,scaleValue(for: 50, screenDimension: size,screenRefrence : screenHeight))
 
                 TextField(" Name", text: $name)
                     .autocorrectionDisabled(true)
@@ -59,6 +59,7 @@ struct CreateAccount: View {
                         RoundedRectangle(cornerRadius: 15)
                         .stroke(Color.black, lineWidth: 2)
                     )
+                    .padding(.trailing,scaleValue(for: 20, screenDimension: size,screenRefrence : screenWidth))
 
                 TextField(" Email", text: $email)
                     .autocorrectionDisabled(true)
@@ -76,6 +77,7 @@ struct CreateAccount: View {
                         RoundedRectangle(cornerRadius: 15)
                         .stroke(Color.black, lineWidth: 2)
                     )
+                    .padding(.trailing,scaleValue(for: 20, screenDimension: size,screenRefrence : screenWidth))
 
 
                 ZStack {
@@ -124,6 +126,7 @@ struct CreateAccount: View {
                             .foregroundColor(.gray)
                     }.padding(.leading,scaleValue(for: 280, screenDimension: size,screenRefrence : screenWidth))
                 }
+                .padding(.trailing,scaleValue(for: 20, screenDimension: size,screenRefrence : screenWidth))
 
 
                 TextField(" Confrim Password", text: $confrimPassword)
@@ -142,6 +145,7 @@ struct CreateAccount: View {
                         RoundedRectangle(cornerRadius: 15)
                         .stroke(Color.black, lineWidth: 2)
                     )
+                    .padding(.trailing,scaleValue(for: 20, screenDimension: size,screenRefrence : screenWidth))
 
 
                 Button(action: {
@@ -213,6 +217,7 @@ struct CreateAccount: View {
                         .background(Color.purple)
                         .contentShape(Rectangle())
                         .cornerRadius(10)
+                        .padding(.trailing,scaleValue(for: 20, screenDimension: size,screenRefrence : screenWidth))
 
 
                 }.alert(alertMessage, isPresented: $showAlert) {
@@ -233,6 +238,7 @@ struct CreateAccount: View {
                             width: scaleValue(for: 150, screenDimension: size,screenRefrence : screenHeight),
                             height: scaleValue(for: 30, screenDimension: size,screenRefrence : screenWidth)
                         )
+                        .padding(.trailing,scaleValue(for: 20, screenDimension: size,screenRefrence : screenWidth))
 
 
 
